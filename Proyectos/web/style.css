@@ -1,0 +1,334 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos de la cabecera */
+header {
+  background-color: #0077cc;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+/* Estilos del menú de navegación */
+nav {
+  background-color: #005fa6;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+/* Estilos de los proyectos */
+section#proyectos {
+  background-color: #fff;
+  padding: 4rem;
+}
+
+section#proyectos h2 {
+  color: #0077cc;
+  text-align: center;
+}
+
+section#proyectos ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section#proyectos li {
+  margin-bottom: 2rem;
+  flex-basis: calc(33.33% - 1rem);
+}
+
+section#proyectos h3 {
+  color: #0077cc;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+section#proyectos p {
+  color: #555;
+  margin: 0;
+}
+
+/* Estilos de la sección "Sobre mí" */
+section#sobre-mi {
+  background-color: #f5f5f5;
+  padding: 4rem;
+}
+
+section#sobre-mi h2 {
+  color: #0077cc;
+  text-align: center;
+}
+
+section#sobre-mi p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+section#sobre-mi ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section#sobre-mi li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+/* Estilos de la sección "Contacto" */
+section#contacto {
+  background-color: #0077cc;
+  padding: 4rem;
+}
+
+section#contacto {
+  background-color: #0077cc;
+  padding: 4rem;
+}
+
+section#contacto h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section#contacto form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+section#contacto label,
+section#contacto input,
+section#contacto textarea {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+section#contacto label {
+  font-weight: bold;
+}
+
+section#contacto input,
+section#contacto textarea {
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+section#contacto input[type="submit"] {
+  background-color: #fff;
+  color: #0077cc;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+section#contacto input[type="submit"]:hover {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+#habilidades {
+  background-color: #fff;
+  color: #333;
+  padding: 4rem;
+}
+
+#habilidades h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#habilidades ul {
+  list-style: none;
+  padding: 0;
+}
+
+#habilidades li {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+section {
+  transition: all 0.5s ease;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas de hasta 768px de ancho */
+  header {
+    padding: 1rem;
+    height: 10rem;
+  }
+
+  /* Estilos para el menú en pantallas de hasta 768px de ancho */
+  .menu {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon:hover {
+    cursor: pointer;
+  }
+
+  .menu-icon img {
+    height: 2rem;
+  }
+
+  .menu-open .menu {
+    display: block;
+  }
+
+  /* Estilos para los proyectos en pantallas de hasta 768px de ancho */
+  section#proyectos {
+    display: block;
+  }
+
+  section#proyectos .proyecto {
+    width: 100%;
+  }
+
+  section#proyectos .proyecto img {
+    width: 100%;
+  }
+
+  section#proyectos .proyecto h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  section#proyectos .proyecto p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+
+/* Boton */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #0077cc;
+  padding: 10px;
+  border-radius: 50%;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.back-to-top.show {
+  display: block;
+}
+
+.back-to-top:hover {
+  opacity: 0.8;
+}
+
+nav a:hover {
+  color: red;
+}
+
+/* Fuente para los títulos */
+h1,
+h2,
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+/* Fuente para el cuerpo de texto */
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* Animación para los botones */
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #f39c12;
+  color: #ffffff;
+}

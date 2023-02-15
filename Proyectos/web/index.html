@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xavi Quesada Sevillano - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <style>
+      .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+      }
+    </style>
+    <script>
+      window.addEventListener("scroll", function () {
+        var button = document.querySelector(".back-to-top");
+        button.style.display = window.scrollY > 300 ? "block" : "none";
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <div class="banner">
+        <h1>Xavi Quesada Sevillano</h1>
+        <p>Desarrollador de aplicaciones web y móviles</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Sección "Sobre mí" -->
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <img src="perfil.jpg" alt="Foto de Xavi Quesada Sevillano" />
+      <p>
+        Hola, soy Xavi Quesada Sevillano y tengo 31 años. Actualmente estoy
+        estudiando un Grado Superior de Desarrollo de Aplicaciones
+        Multiplataforma (DAM). Me apasiona el mundo de la programación y la
+        tecnología en general, y estoy constantemente aprendiendo nuevas
+        habilidades y mejorando mis conocimientos.
+      </p>
+    </section>
+
+    <!-- Sección "Proyectos" -->
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <ul>
+        <li>
+          <h3>Proyecto 1</h3>
+          <img src="proyecto1.jpg" alt="Captura de pantalla del Proyecto 1" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            sodales turpis sit amet magna fringilla venenatis. Sed porttitor
+            nisi vel odio vestibulum, a iaculis quam faucibus. Nam auctor, arcu
+            vel faucibus consectetur, velit velit imperdiet purus, at consequat
+            nibh augue et risus.
+          </p>
+        </li>
+        <li>
+          <h3>Proyecto 2</h3>
+          <img src="proyecto2.jpg" alt="Captura de pantalla del Proyecto 2" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            sodales turpis sit amet magna fringilla venenatis. Sed porttitor
+            nisi vel odio vestibulum, a iaculis quam faucibus. Nam auctor, arcu
+            vel faucibus consectetur, velit velit imperdiet purus, at consequat
+            nibh augue et risus.
+          </p>
+        </li>
+        <li>
+          <h3>Proyecto 3</h3>
+          <img src="proyecto3.jpg" alt="Captura de pantalla del Proyecto 3" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            sodales turpis sit amet magna fringilla venenatis. Sed porttitor
+            nisi vel odio vestibulum, a iaculis
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Sección "Habilidades" -->
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Desarrollo web</li>
+        <li>Programación en Java</li>
+        <li>Diseño gráfico</li>
+      </ul>
+    </section>
+
+    <!-- Sección "Contacto" -->
+    <section id="contacto">
+      <a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
+      <h2>Contacto</h2>
+      <form action="enviar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <div class="datos">
+        <h3>Datos de contacto</h3>
+        <ul>
+          <li>Teléfono: 123-456-789</li>
+          <li>Email: xaviqs@example.com</li>
+          <li>Dirección: Av. Example 123, 08000 Barcelona</li>
+        </ul>
+      </div>
+      <div class="redes-sociales">
+        <h3>Redes sociales</h3>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/xaviqs" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/xaviqs" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/xaviqs" target="_blank">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
